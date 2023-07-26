@@ -104,7 +104,7 @@
       </nav>
       <div class="container mx-auto">
         <div class="carousel w-full">
-          <div id="slide1" class="carousel-item relative w-full ">
+          <div id="slide1" class="carousel-item relative w-full">
             <img src="/images/banner1.png" class="w-full" />
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
@@ -113,7 +113,7 @@
               <a href="#slide2" class="btn btn-circle">❯</a>
             </div>
           </div>
-          <div id="slide2" class="carousel-item relative w-full ">
+          <div id="slide2" class="carousel-item relative w-full">
             <img src="/images/banner2.png" class="w-full" />
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
@@ -148,79 +148,313 @@
         </div>
 
         <!-- extra images -->
-        <div class="flex justify-center mb-36">
-
-          <div class=" -my-32 items-center shadow-lg  px-16 py-12 gap-24 flex justify-center bg-white absolute"> 
-
-            <div class=" w-36 text-center">
-              <img src="./images/fruit1.png" alt="">
-              <p class=" mt-4">Strawberry</p>
+        <div class=" hidden lg:flex justify-center mb-36">
+          <div
+            class=" rounded-lg -my-32 items-center shadow-lg px-16 py-12 gap-24 flex justify-center bg-white absolute"
+          >
+            <div class="w-36 text-center">
+              <img src="./images/fruit1.png" alt="" />
+              <p class="mt-4">Strawberry</p>
             </div>
-            <div class=" w-36 text-center">
-              <img src="./images/fruit2.png" alt="">
-              <p class=" mt-4">Strawberry</p>
+            <div class="w-36 text-center">
+              <img src="./images/fruit2.png" alt="" />
+              <p class="mt-4">Strawberry</p>
             </div>
-            <div class=" w-36 text-center">
-              <img class="" src="./images/fruit3.png" alt="">
-              <p class=" mt-6">Strawberry</p>
+            <div class="w-36 text-center">
+              <img class="" src="./images/fruit3.png" alt="" />
+              <p class="mt-6">Strawberry</p>
             </div>
-            <div class=" w-36 text-center">
-              <img src="./images/fruit4.png" alt="">
-              <p class=" mt-4">Strawberry</p>
+            <div class="w-36 text-center">
+              <img src="./images/fruit4.png" alt="" />
+              <p class="mt-4">Strawberry</p>
             </div>
-  
           </div>
         </div>
-
-        <div class=" container">
-          <div>
-            <div class=" flex justify-between">
-
-              <div>
-                <h1>Deal of the day</h1>
-                <p class=" max-w-xl">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
-              </div>
-
-              <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
-                <div class="flex flex-col">
-                  <span class="countdown font-mono text-5xl">
-                    <span style="--value:15;"></span>
-                  </span>
-                  days
-                </div> 
-                <div class="flex flex-col">
-                  <span class="countdown font-mono text-5xl">
-                    <span style="--value:10;"></span>
-                  </span>
-                  hours
-                </div> 
-                <div class="flex flex-col">
-                  <span class="countdown font-mono text-5xl">
-                    <span style="--value:24;"></span>
-                  </span>
-                  min
-                </div> 
-                <div class="flex flex-col">
-                  <span class="countdown font-mono text-5xl">
-                    <span style="--value:33;"></span>
-                  </span>
-                  sec
-                </div>
-              </div>
-
-            </div>
-          
-          </div>
-
-
-
-        </div>
-
-
       </div>
     </header>
 
-    <main></main>
+    <main>
+      <div class="mt-64 container mx-auto">
+        <div class="flex justify-between">
+          <div class="flex-1">
+            <h1 class="font-lato font-extrabold text-5xl">Deal of the day</h1>
+            <p
+              class="mb-12 mt-6 textÏ-base font-medium text-[#12121299] font-lato md: max-w-xl"
+            >
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+
+          <div class="grid grid-flow-col gap-5 text-center auto-cols-max">
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 15"></span>
+              </span>
+              days
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 10"></span>
+              </span>
+              hours
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 24"></span>
+              </span>
+              minutes
+            </div>
+            <div class="flex flex-col">
+              <span class="countdown font-mono text-5xl">
+                <span style="--value: 33"></span>
+              </span>
+              seconds
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="container">
+            <div class=" grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+              <div class="card w-80 bg-base-100 py-12 border">
+                <figure><img src="/images/fruit6.png" alt="Shoes" /></figure>
+                <div class="mt-12 text-center font-lato text-2xl font-bold">
+                  12.90$ - 18.85$
+                </div>
+                <hr class="w-4/5 mx-auto my-6" />
+                <div class="text-center flex flex-col gap-7">
+                  <h2 class="text-center text-[#12121299]">Apples</h2>
+                  <div class="flex justify-center mt">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="160"
+                      height="24"
+                      viewBox="0 0 160 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z"
+                        fill="#F85559"
+                      />
+                      <path
+                        d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z"
+                        fill="#FBC0A8"
+                      />
+                      <path
+                        d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                        fill="#F85559"
+                      />
+                      <path
+                        d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                        fill="#FBC0A8"
+                      />
+                      <path
+                        d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                        fill="#FBC0A8"
+                      />
+                      <path
+                        d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                        fill="#FBC0A8"
+                      />
+                    </svg>
+                  </div>
+                  <div class="card-actions justify-center">
+                    <button class=" text-[#F85559] ">Details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card w-80 bg-base-100 py-12 border">
+                <figure><img src="/images/fruit7.png" alt="Shoes" /></figure>
+                <div class="mt-12 text-center font-lato text-2xl font-bold">
+                  12.90$ - 18.85$
+                </div>
+                <hr class="w-4/5 mx-auto my-6" />
+                <div class="text-center flex flex-col gap-7">
+                  <h2 class="text-center text-[#12121299]">Orange</h2>
+                  <div class="flex justify-center mt">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="160"
+                      height="24"
+                      viewBox="0 0 160 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z"
+                        fill="#F85559"
+                      />
+                      <path
+                        d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z"
+                        fill="#FBC0A8"
+                      />
+                      <path
+                        d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                        fill="#F85559"
+                      />
+                      <path
+                        d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                        fill="#FBC0A8"
+                      />
+                      <path
+                        d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                        fill="#FBC0A8"
+                      />
+                      <path
+                        d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                        fill="#FBC0A8"
+                      />
+                    </svg>
+                  </div>
+                  <div class="card-actions justify-center">
+                    <button class=" text-[#F85559] ">Details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card w-80 bg-base-100 py-12 border">
+                <figure><img src="/images/fruit8.png" alt="Shoes" /></figure>
+                <div class="mt-12 text-center font-lato text-2xl font-bold">
+                  12.90$ - 18.85$
+                </div>
+                <hr class="w-4/5 mx-auto my-6" />
+                <div class="text-center flex flex-col gap-7">
+                  <h2 class="text-center text-[#12121299]">Red Dragon</h2>
+                  <div class="flex justify-center mt">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="160"
+                      height="24"
+                      viewBox="0 0 160 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z"
+                        fill="#F85559"
+                      />
+                      <path
+                        d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z"
+                        fill="#FBC0A8"
+                      />
+                      <path
+                        d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                        fill="#F85559"
+                      />
+                      <path
+                        d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                        fill="#FBC0A8"
+                      />
+                      <path
+                        d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                        fill="#FBC0A8"
+                      />
+                      <path
+                        d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                        fill="#FBC0A8"
+                      />
+                    </svg>
+                  </div>
+                  <div class="card-actions justify-center">
+                    <button class=" text-[#F85559] ">Details</button>
+                  </div>
+                </div>
+              </div>
+              <div class="card w-80 bg-base-100 py-12 border">
+                <figure><img src="/images/fruit9.png" alt="Shoes" /></figure>
+                <div class="mt-12 text-center font-lato text-2xl font-bold">
+                  12.90$ - 18.85$
+                </div>
+                <hr class="w-4/5 mx-auto my-6" />
+                <div class="text-center flex flex-col gap-7">
+                  <h2 class="text-center text-[#12121299]">Banana</h2>
+                  <div class="flex justify-center mt">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="160"
+                      height="24"
+                      viewBox="0 0 160 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M45.8529 0L50.4018 7.00591L58.4705 9.16716L53.2131 15.6584L53.651 24L45.8529 21.0059L38.0549 24L38.4927 15.6584L33.2354 9.16716L41.3041 7.00591L45.8529 0Z"
+                        fill="#F85559"
+                      />
+                      <path
+                        d="M45.9038 0L50.4527 7.00591L58.5214 9.16716L53.264 15.6584L53.7018 24L45.9038 21.0059V0Z"
+                        fill="#FBC0A8"
+                      />
+                      <path
+                        d="M12.6176 0L17.1664 7.00591L25.2351 9.16716L19.9778 15.6584L20.4156 24L12.6176 21.0059L4.81952 24L5.25735 15.6584L0 9.16716L8.06871 7.00591L12.6176 0Z"
+                        fill="#F85559"
+                      />
+                      <path
+                        d="M79.6176 0L84.1664 7.00591L92.2351 9.16716L86.9778 15.6584L87.4156 24L79.6176 21.0059L71.8195 24L72.2574 15.6584L67 9.16716L75.0687 7.00591L79.6176 0Z"
+                        fill="#FBC0A8"
+                      />
+                      <path
+                        d="M146.618 0L151.166 7.00591L159.235 9.16716L153.978 15.6584L154.416 24L146.618 21.0059L138.82 24L139.257 15.6584L134 9.16716L142.069 7.00591L146.618 0Z"
+                        fill="#FBC0A8"
+                      />
+                      <path
+                        d="M113.618 0L118.166 7.00591L126.235 9.16716L120.978 15.6584L121.416 24L113.618 21.0059L105.82 24L106.257 15.6584L101 9.16716L109.069 7.00591L113.618 0Z"
+                        fill="#FBC0A8"
+                      />
+                    </svg>
+                  </div>
+                  <div class="card-actions justify-center">
+                    <button class=" text-[#F85559] ">Details</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class=" text-center py-12">
+              <button class=" px-7 py-5 bg-[#F85559] text-white font-lato ">Shop All</button>
+            </div>
+          </div>
+        </div>
+
+        <div>
+          <div class="hero min-h-screen" style="background-image: url(./images/team.png);">
+            <div class="hero-overlay bg-opacity-60"></div>
+            <div class="hero-content text-center text-neutral-content">
+              <div class="max-w-md">
+                <h1 class="mb-5 text-5xl font-bold">Meet the team section</h1>
+                <p class="mb-5">Contrary to popular belief, is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old.</p>
+                <div class=" flex">
+                  <ul>
+                    <li>
+                    <img src="./images/member1.png" alt="">
+                    <h1></h1>
+                    <p></p>
+                    <img src="" alt=""><img src="" alt=""><img src="" alt="">
+                  </li>
+                    <li>
+                    <img src="./images/member2.png" alt="">
+                    <h1></h1>
+                    <p></p>
+                    <img src="" alt=""><img src="" alt=""><img src="" alt="">
+                  </li>
+                    <li>
+                    <img src="./images/member3.png" alt="">
+                    <h1></h1>
+                    <p></p>
+                    <img src="" alt=""><img src="" alt=""><img src="" alt="">
+                  </li>
+                    <li>
+                    <img src="./images/member4.png" alt="">
+                    <h1></h1>
+                    <p></p>
+                    <img src="" alt=""><img src="" alt=""><img src="" alt="">
+                  </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>         
+        </div>
+      </div>
+    </main>
 
     <footer></footer>
   </body>
