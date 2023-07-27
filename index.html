@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Fruit Burst</title>
 
     <link
       href="https://cdn.jsdelivr.net/npm/daisyui@3.5.0/dist/full.css"
@@ -13,9 +13,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 
     <!-- GOOGLE FONT -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap"
+      rel="stylesheet"
+    />
     <!-- cusromize tailwind -->
     <script>
       tailwind.config = {
@@ -36,14 +39,12 @@
     </style>
   </head>
 
-  <body>
+  <body class="font-lato">
     <header>
       <nav>
         <div class="container mx-auto text-white">
-          <div
-            class="navbar bg-[#F85559] flex rounded-full my-12 py-6 px-12"
-          >
-            <div class="flex-1   ">
+          <div class="navbar bg-[#F85559] flex rounded-full my-12 py-6 px-12">
+            <div class="flex-1">
               <div class="dropdown lg:hidden">
                 <label tabindex="0" class="btn btn-ghost btn-circle">
                   <svg
@@ -63,7 +64,7 @@
                 </label>
                 <ul
                   tabindex="0"
-                  class="menu  menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black"
+                  class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 text-black"
                 >
                   <li><a>Home</a></li>
                   <li><a>About Us</a></li>
@@ -82,18 +83,35 @@
               </div>
             </div>
 
-            <div class=" lg:flex-1 justify-center">
+            <div class="lg:flex-1 justify-center">
               <img src="./images/logo.png" alt="" />
               <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
             </div>
 
-            <div class="lg:visible flex-1 justify-end ">
+            <div class="flex-1">
               <div class="">
-                <div class="form-control">
-                  <div class="input-group">
-                    <input type="text" placeholder="Search…" class="input w-72 justify-end" />
-                    <button class="btn btn-square">
-                      <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" /></svg>
+                <div class="hidden lg:form-control visible">
+                  <div class="input-group justify-end">
+                    <input
+                      type="text"
+                      placeholder="Search…"
+                      class="input w-72 justify-end"
+                    />
+                    <button class="btn">
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        class="h-6 w-6"
+                        fill="none"
+                        viewBox="0 0 24 24"
+                        stroke="currentColor"
+                      >
+                        <path
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="2"
+                          d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                        />
+                      </svg>
                     </button>
                   </div>
                 </div>
@@ -103,8 +121,26 @@
         </div>
       </nav>
       <div class="container mx-auto">
-        <div class="carousel w-full">
+        <div class="carousel w-full mix-blend-darken">
           <div id="slide1" class="carousel-item relative w-full">
+            <div class="mx-auto">
+              <div
+                class="absolute flex flex-col text-white align-middle text-center w-full my-28"
+              >
+                <h1 class="text-7xl font-extrabold">
+                  Exotic tastes at your <br />
+                  doorstep
+                </h1>
+                <p class="text-xl font-medium my-7">
+                  We supply highly quality organic products
+                </p>
+                <button
+                  class="mx-auto px-7 py-5 rounded-xl bt bg-[#F85559] text-xl font-extrabold"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
             <img src="/images/banner1.png" class="w-full" />
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
@@ -114,21 +150,52 @@
             </div>
           </div>
           <div id="slide2" class="carousel-item relative w-full">
-            <img src="/images/banner2.png" class="w-full" />
+            <div class="mx-auto">
+              <div
+                class="absolute flex flex-col text-white align-middle text-center w-full my-28"
+              >
+                <h1 class="text-7xl font-extrabold">
+                  Exotic tastes at your <br />
+                  doorstep
+                </h1>
+                <p class="text-xl font-medium my-7">
+                  We supply highly quality organic products
+                </p>
+                <button
+                  class="mx-auto px-7 py-5 rounded-xl bt bg-[#F85559] text-xl font-extrabold"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+            <img src="./images/banner2.png" class="w-full" />
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
               <a href="#slide1" class="btn btn-circle">❮</a>
               <a href="#slide3" class="btn btn-circle">❯</a>
             </div>
-            <div class=" ">
-              <!-- <h1>Exotic tastes at your doorstep</h1>
-              <p>We supply highly quality organic products</p>
-              <button>Shop Now</button> -->
-            </div>
           </div>
           <div id="slide3" class="carousel-item relative w-full">
-            <img src="/images/banner3.png" class="w-full" />
+            <div class="mx-auto">
+              <div
+                class="absolute flex flex-col text-white align-middle text-center w-full my-28"
+              >
+                <h1 class="text-7xl font-extrabold">
+                  Exotic tastes at your <br />
+                  doorstep
+                </h1>
+                <p class="text-xl font-medium my-7">
+                  We supply highly quality organic products
+                </p>
+                <button
+                  class="mx-auto px-7 py-5 rounded-xl bt bg-[#F85559] text-xl font-extrabold"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+            <img src="./images/banner3.png" class="w-full" />
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
@@ -137,7 +204,25 @@
             </div>
           </div>
           <div id="slide4" class="carousel-item relative w-full">
-            <img src="/images/banner4.png" class="w-full" />
+            <div class="mx-auto">
+              <div
+                class="absolute flex flex-col text-white align-middle text-center w-full my-28"
+              >
+                <h1 class="text-7xl font-extrabold">
+                  Exotic tastes at your <br />
+                  doorstep
+                </h1>
+                <p class="text-xl font-medium my-7">
+                  We supply highly quality organic products
+                </p>
+                <button
+                  class="mx-auto px-7 py-5 rounded-xl bt bg-[#F85559] text-xl font-extrabold"
+                >
+                  Shop Now
+                </button>
+              </div>
+            </div>
+            <img src="./images/banner4.png" class="w-full" />
             <div
               class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
             >
@@ -148,11 +233,11 @@
         </div>
 
         <!-- extra images -->
-        <div class=" mx-auto hidden lg:flex justify-center mb-36">
+        <div class="mx-auto hidden lg:flex justify-center mb-36">
           <div
-            class=" rounded-lg -my-32 items-center shadow-lg px-16 py-12 gap-24 flex justify-center bg-white absolute"
+            class="rounded-lg -my-32 items-center shadow-lg px-16 py-12 gap-24 flex justify-center bg-white absolute"
           >
-            <div class=" w-36 text-center">
+            <div class="w-36 text-center">
               <img src="./images/fruit1.png" alt="" />
               <p class="mt-4">Strawberry</p>
             </div>
@@ -173,7 +258,7 @@
       </div>
     </header>
 
-    <main>
+    <main class="container mx-auto lg:px-24">
       <div class="mt-64 container mx-auto">
         <div class="sd:flex-col lg:flex justify-between">
           <div class="flex-1">
@@ -217,7 +302,9 @@
 
         <div>
           <div class="container">
-            <div class="content-center mx-auto pm-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            <div
+              class="mx-auto pm-auto grid md:grid-cols-2 lg:grid-cols-4 gap-6"
+            >
               <div class="card w-80 bg-base-100 py-12 border">
                 <figure><img src="/images/fruit6.png" alt="Shoes" /></figure>
                 <div class="mt-12 text-center font-lato text-2xl font-bold">
@@ -419,24 +506,27 @@
         </div>
 
         <div>
-          <div
-            class="hero min-h-screen"
-            style="background-image: url(./images/team.png)"
-          >
+          <div class="hero" style="background-image: url(./images/team.png)">
             <div class="hero-overlay bg-opacity-60"></div>
-            <div class="text-center text-white ">
+            <div class="text-center text-white">
               <h1 class="mt-28 mb-5 text-5xl font-extrabold">
                 Meet the team section
               </h1>
-              <p class="mb-5 mt-6 px-auto  ">
+              <p class="mb-5 mt-6 px-auto">
                 Contrary to popular belief, is not simply random text. It has
                 roots in a piece of classical Latin literature from 45 BC,
                 making it over 2000 years old.
               </p>
               <div>
-                <ul class="flex flex-col text-center justify-center gap-28 lg:flex-row">
+                <ul
+                  class="pb-28 flex flex-col text-center justify-center gap-28 lg:flex-row"
+                >
                   <li class="flex text-center flex-col gap-4">
-                    <img class=" mx-auto w-36 py-auto" src="./images/member1.png" alt="" />
+                    <img
+                      class="mx-auto w-36 py-auto"
+                      src="./images/member1.png"
+                      alt=""
+                    />
                     <h1 class="font-lato text-2xl font-bold">Awlad Hossain</h1>
                     <p>Fruits Expert</p>
                     <div class="flex gap-3 justify-center">
@@ -446,8 +536,14 @@
                     </div>
                   </li>
                   <li class="flex flex-col gap-4">
-                    <img class=" mx-auto w-36"  src="./images/member2.png" alt="" />
-                    <h1 class="font-lato text-2xl font-bold">Safia Chowdhury</h1>
+                    <img
+                      class="mx-auto w-36"
+                      src="./images/member2.png"
+                      alt=""
+                    />
+                    <h1 class="font-lato text-2xl font-bold">
+                      Safia Chowdhury
+                    </h1>
                     <p>Fruits Expert</p>
                     <div class="flex gap-3 justify-center">
                       <img src="./images/fb.png" alt="" />
@@ -456,7 +552,11 @@
                     </div>
                   </li>
                   <li class="flex flex-col gap-4">
-                    <img class="mx-auto w-36"  src="./images/member3.png" alt="" />
+                    <img
+                      class="mx-auto w-36"
+                      src="./images/member3.png"
+                      alt=""
+                    />
                     <h1 class="font-lato text-2xl font-bold">Rokib Hossain</h1>
                     <p>Fruits Expert</p>
                     <div class="flex gap-3 justify-center">
@@ -466,7 +566,11 @@
                     </div>
                   </li>
                   <li class="flex flex-col gap-4">
-                    <img class="mx-auto w-36"  src="./images/member4.png" alt="" />
+                    <img
+                      class="mx-auto w-36"
+                      src="./images/member4.png"
+                      alt=""
+                    />
                     <h1 class="font-lato text-2xl font-bold">Rokib Hossain</h1>
                     <p>Fruits Expert</p>
                     <div class="flex gap-3 justify-center">
@@ -480,9 +584,249 @@
             </div>
           </div>
         </div>
+        <!-- why choose us -->
+        <div class="m-36 mb container mx-auto">
+          <div class="text-center">
+            <h1 class="mb-6 text-5xl font-extrabold">Why Choose Us</h1>
+            <p class="mb-12 text-[#12121299] mx-auto max-w-xl">
+              Contrary to popular belief, is not simply random text. It has
+              roots in a piece of classical Latin literature from 45 BC, making
+              it over 2000 years old.
+            </p>
+          </div>
+          <div class="container mx-auto flex mb-12">
+            <div class="flex-1 flex flex-col gap-12">
+              <div class="flex gap-6">
+                <div>
+                  <div class="w-16 h-16 p-5 bg-[#12121220] rounded-full">
+                    <svg
+                      class=""
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z"
+                        fill="#121212"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <h1 class="text-2xl font-extrabold">Dedicated Team</h1>
+                  <hr class="my-5 w-24" />
+                  <p>
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-6">
+                <div>
+                  <div class="w-16 h-16 p-5 bg-[#12121220] rounded-full">
+                    <svg
+                      class=""
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z"
+                        fill="#121212"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <h1 class="text-2xl font-extrabold">Dedicated Team</h1>
+                  <hr class="my-5 w-24" />
+                  <p>
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                </div>
+              </div>
+              <div class="flex gap-6">
+                <div>
+                  <div class="w-16 h-16 p-5 bg-[#12121220] rounded-full">
+                    <svg
+                      class=""
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                    >
+                      <path
+                        d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z"
+                        fill="#121212"
+                      />
+                    </svg>
+                  </div>
+                </div>
+                <div>
+                  <h1 class="text-2xl font-extrabold">Dedicated Team</h1>
+                  <hr class="my-5 w-24" />
+                  <p>
+                    Professional employees are there for you to pick the most
+                    amazing and fresh fruits.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div class="flex-1 mx-12 ">
+              <img class=" h-fit" src="./images/whychoose1.png" alt="" />
+            </div>
+            <div class="flex-1">
+              <div class="flex-1 flex flex-col gap-12">
+                <div class="flex gap-6">
+                  <div class=" text-right">
+                    <h1 class="text-2xl font-extrabold">Dedicated Team</h1>
+                    <hr class="my-5 w-24" />
+                    <p>
+                      Professional employees are there for you to pick the most
+                      amazing and fresh fruits.
+                    </p>
+                  </div>
+
+                  <div>
+                    <div class="w-16 h-16 p-5 bg-[#12121220] rounded-full">
+                      <svg
+                        class=""
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z"
+                          fill="#121212"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex gap-6">
+                  
+                  <div class=" text-right">
+                    <h1 class="text-2xl font-extrabold">Dedicated Team</h1>
+                    <hr class="my-5 w-24" />
+                    <p>
+                      Professional employees are there for you to pick the most
+                      amazing and fresh fruits.
+                    </p>
+                  </div>
+                  <div>
+                    <div class="w-16 h-16 p-5 bg-[#12121220] rounded-full">
+                      <svg
+                        class=""
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none">
+                        <path
+                          d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z"
+                          fill="#121212"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+                <div class="flex gap-6">
+                  
+                  <div class=" text-right">
+                    <h1 class="text-2xl font-extrabold">Dedicated Team</h1>
+                    <hr class="my-5 w-24" />
+                    <p>
+                      Professional employees are there for you to pick the most
+                      amazing and fresh fruits.
+                    </p>
+                  </div>
+                  <div>
+                    <div class="w-16 h-16 p-5 bg-[#12121220] rounded-full">
+                      <svg
+                        class=""
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="24"
+                        height="24"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                      >
+                        <path
+                          d="M20.52 9.16036C21.2025 8.49188 21.6 7.5787 21.6 6.6C21.6 4.61503 19.9852 3 18 3C17.3441 3 16.6988 3.18028 16.1332 3.52148C15.9442 3.63577 15.8832 3.88144 15.9973 4.07072C16.1113 4.26 16.3574 4.32033 16.5465 4.20666C16.9875 3.94064 17.4899 3.80002 18 3.80002C19.5437 3.80002 20.8 5.05608 20.8 6.6C20.8 7.55077 20.3238 8.42714 19.5246 8.94548C18.8535 9.38573 18.0027 9.51267 17.2258 9.29138C17.0156 9.23081 16.7922 9.35348 16.7312 9.56597C16.6707 9.77845 16.7937 9.99975 17.0062 10.0605C17.3297 10.1531 17.664 10.2 18 10.2C18.629 10.2 19.2369 10.0284 19.7767 9.71855C21.8301 10.4626 23.2 12.4013 23.2 14.6V16.6H19.5525C19.2692 13.9283 17.5884 11.5904 15.1367 10.4802C15.9169 9.68587 16.4 8.59875 16.4 7.40002C16.4 4.97381 14.4262 3 12 3C9.57384 3 7.59998 4.97381 7.59998 7.40002C7.59998 8.59913 8.08336 9.68658 8.86397 10.481C8.03887 10.8559 7.27364 11.3803 6.62461 12.0256C5.38041 13.2734 4.62328 14.8749 4.44356 16.6001H0.800016V14.6001C0.800016 13.2149 1.34105 11.9089 2.32191 10.9239C2.86186 10.3874 3.51923 9.97805 4.22705 9.7208C4.76691 10.0294 5.37305 10.2 6 10.2C6.33595 10.2 6.67031 10.1531 6.99375 10.0605C7.20623 9.9998 7.32928 9.7785 7.26876 9.56602C7.20783 9.35353 6.98437 9.23105 6.77423 9.29142C5.99766 9.51309 5.1473 9.38634 4.47347 8.94455C3.67622 8.42714 3.20002 7.55081 3.20002 6.6C3.20002 5.05608 4.45627 3.80002 6 3.80002C6.51014 3.80002 7.0125 3.94064 7.4535 4.20666C7.64334 4.32033 7.88827 4.25939 8.00273 4.07072C8.11678 3.88148 8.05584 3.63577 7.8668 3.52148C7.30116 3.18028 6.65587 3 6 3C4.01484 3 2.4 4.61503 2.4 6.6C2.4 7.57795 2.7968 8.49042 3.47737 9.1583C2.84302 9.45319 2.25712 9.8603 1.75627 10.3578C0.623812 11.4953 0 13.0018 0 14.6V17C0 17.2209 0.178922 17.4 0.399984 17.4H4.39997V20.6C4.39997 20.8209 4.57889 21 4.79995 21H19.2C19.4211 21 19.5999 20.8209 19.5999 20.6V17.4H23.5999C23.821 17.4 23.9999 17.2209 23.9999 17V14.6C24 12.2349 22.6255 10.131 20.52 9.16036ZM8.4 7.40002C8.4 5.41505 10.0148 3.80002 12 3.80002C13.9852 3.80002 15.6 5.41505 15.6 7.40002C15.6 9.38498 13.9852 11 12 11C10.0148 11 8.4 9.38494 8.4 7.40002ZM18.8 20.2H5.19998V17.4C5.19998 15.5863 5.907 13.8783 7.18983 12.5916C7.86562 11.9194 8.68491 11.398 9.5633 11.0607C10.2615 11.527 11.0992 11.8 12 11.8C12.9022 11.8 13.7415 11.5262 14.4403 11.0585C17.0549 12.0631 18.8 14.5838 18.8 17.4V20.2Z"
+                          fill="#121212"
+                        />
+                      </svg>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </main>
 
-    <footer></footer>
+    <footer
+      class="container mx-auto footer footer-center p-10 bg-black text-white rounded">
+      <div class="mt-36 flex-row lg:flex justify-center">
+        <img src="./images/logo.png" alt="" />
+        <a class="btn btn-ghost normal-case text-xl">Fruit Burst</a>
+      </div>
+      <div class="flex flex-col gap-14 lg:flex-row py-12">
+        <a class="link link-hover">Home</a>
+        <a class="link link-hover">About Us</a>
+        <a class="link link-hover">Shop</a>
+        <a class="link link-hover">All Fruits</a>
+        <a class="link link-hover">Support</a>
+        <a class="link link-hover">My Account</a>
+      </div>
+      <div>
+        <div class="grid grid-flow-col gap-10 mb-36">
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current">
+              <path
+                d="M24 4.557c-.883.392-1.832.656-2.828.775 1.017-.609 1.798-1.574 2.165-2.724-.951.564-2.005.974-3.127 1.195-.897-.957-2.178-1.555-3.594-1.555-3.179 0-5.515 2.966-4.797 6.045-4.091-.205-7.719-2.165-10.148-5.144-1.29 2.213-.669 5.108 1.523 6.574-.806-.026-1.566-.247-2.229-.616-.054 2.281 1.581 4.415 3.949 4.89-.693.188-1.452.232-2.224.084.626 1.956 2.444 3.379 4.6 3.419-2.07 1.623-4.678 2.348-7.29 2.04 2.179 1.397 4.768 2.212 7.548 2.212 9.142 0 14.307-7.721 13.995-14.646.962-.695 1.797-1.562 2.457-2.549z">
+            </path>
+            </svg>
+            </a>
+          <a>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current">
+              <path
+                d="M19.615 3.184c-3.604-.246-11.631-.245-15.23 0-3.897.266-4.356 2.62-4.385 8.816.029 6.185.484 8.549 4.385 8.816 3.6.245 11.626.246 15.23 0 3.897-.266 4.356-2.62 4.385-8.816-.029-6.185-.484-8.549-4.385-8.816zm-10.615 12.816v-8l8 3.993-8 4.007z">
+            </path>
+          </svg>
+        </a>
+          <a
+            ><svg
+              xmlns="http://www.w3.org/2000/svg"
+              width="24"
+              height="24"
+              viewBox="0 0 24 24"
+              class="fill-current">
+              <path
+                d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z">
+            </path>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
